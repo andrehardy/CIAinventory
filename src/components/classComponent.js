@@ -15,7 +15,7 @@ export default class AddInventory extends Component{
         //console.log(formData.current)
         const newProduct = {
             product_name: this.formData.current.product_name.value,
-            price: this.formData.current.price.value,
+            supplier: this.formData.current.supplier.value,
             qty: Number(this.formData.current.qty.value)
         }
         // add a new product inside products array
@@ -53,8 +53,8 @@ export default class AddInventory extends Component{
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPrice">
-                        <Form.Label>Price:</Form.Label>
-                        <Form.Control type="number" placeholder="Price in USD" name="price" />
+                        <Form.Label>Supplier:</Form.Label>
+                        <Form.Control type="text" placeholder="Provider of this product" name="supplier" />
                     </Form.Group>
 
                     <Form.Group controlId="formBasicQty">
@@ -83,7 +83,7 @@ export default class AddInventory extends Component{
                                     <tr key={index}>
                                         <td>{index}</td>
                                         <td>{item.product_name}</td>
-                                        <td>{item.price}</td>
+                                        <td>{item.supplier}</td>
                                         <td>{item.qty}</td>
                                         <td>
                                             <Button variant="success" onClick={event => this.increQty(event)} value={index}>+</Button>
