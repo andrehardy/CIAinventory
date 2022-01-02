@@ -8,18 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Crime Intervention Alarm Inventory</h1>
+        <h1>CIA Inventory</h1>
         <AddInventory/>
         <AddProduct/>
-        {/* <h1>We will cover here:</h1>
-        <ul>
-          <li>Reactjs ref vs syntheticEvent</li>
-          <li>Form in reactjs</li>
-          <li>Reactjs Hook: useState()</li>
-          <li>React components: functional vs class</li>
-          <li>Add product name, price, quantity in inventory data</li>
-          <li>React-Bootstrap use case</li>
-        </ul> */}
       </header>
     </div>
   );
