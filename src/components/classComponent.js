@@ -71,7 +71,7 @@ export default class AddInventory extends Component{
                         <tr>
                             <th>Index</th>
                             <th>Product Name:</th>
-                            <th>Price</th>
+                            <th>Supplier</th>
                             <th>Qty</th>
                             <th>Options</th>
                         </tr>
