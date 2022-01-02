@@ -54,12 +54,12 @@ export default class AddInventory extends Component{
 
                     <Form.Group controlId="formBasicPrice">
                         <Form.Label>Price:</Form.Label>
-                        <Form.Control type="number" placeholder="Price in Euro" name="price" />
+                        <Form.Control type="number" placeholder="Price in USD" name="price" />
                     </Form.Group>
 
                     <Form.Group controlId="formBasicQty">
                         <Form.Label>Quantity:</Form.Label>
-                        <Form.Control type="number" placeholder="How many: qty" name="qty" />
+                        <Form.Control type="number" placeholder="How many units" name="qty" />
                     </Form.Group>
 
                     <Button variant="primary" type="submit">
